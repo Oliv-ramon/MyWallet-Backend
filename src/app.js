@@ -7,4 +7,4 @@ app.use(json());
 app.use(cors());
 app.use(route);
 
-app.listen(5000, console.log("Listening on 5000"));
+app.listen(process.env.PORT, console.log(`Listenning on port ${process.env.PORT}`));
