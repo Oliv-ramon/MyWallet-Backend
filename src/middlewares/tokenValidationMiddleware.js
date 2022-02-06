@@ -9,10 +9,8 @@ export default async function tokenValidationMiddleware(req, res, next) {
   try {
     const session = await db.collection("sessions").findOne({ token });
     if (!session) return res.sendStatus(401);
-  
-    const userTransactions = await db.collection("transactions").find({ userId: session.userId }).toArray();
     
-    res.locals.transactions = userTransactions;
+    res.locals.userId = session.userId;
   } catch (error) {
     console.log(error);
     res.sendStatus(500);

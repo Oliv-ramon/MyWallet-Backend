@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { getTransactions } from "../controllers/transactionsController.js";
-import { tokenValidationMiddleware } from "../middlewares/index.js";
+import { getTransactions, saveTransactions } from "../controllers/transactionsController.js";
+import { tokenValidationMiddleware, transactionSchemaValidationMiddleware } from "../middlewares/index.js";
 
 const transactionsRouter = Router();
-transactionsRouter.get("/transactions", tokenValidationMiddleware, getTransactions);
-//transactionsRouter.post("/transactions", loginSchemaValidatorMiddleware, signIn);
+transactionsRouter.use(tokenValidationMiddleware);
+transactionsRouter.get("/transactions", getTransactions);
+transactionsRouter.post("/transactions", transactionSchemaValidationMiddleware,saveTransactions);
 
 export default transactionsRouter;
