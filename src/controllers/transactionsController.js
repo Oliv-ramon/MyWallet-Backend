@@ -34,3 +34,16 @@ export async function saveTransactions(req, res) {
     res.sendStatus(500);
   }
 }
+
+export async function deleteTransaction(req, res) {
+  const transactionId = res.locals.transactionId;
+
+  try {
+    const delection = await db.collection("transactions").deleteOne({ _id: transactionId });
+    console.log(delection)
+    res.sendStatus(200);
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+}
