@@ -2,7 +2,21 @@
 
 This is the back-end of the [MyWallet](https://github.com/Oliv-ramon/MyWallet). 
 
-It's a REST API built with NodeJS + Express + MongoDB that receive all the data related with users and his transaction and record/provide to the client all this data through the API. 
+It's a REST API built with NodeJS + Express + MongoDB that receive all the data related to users and their transaction and record/provide to the client all this data through the API. 
+
+### About this project
+
+This project is part of my portfolio, so, any feedback about the project, code, or anything that you can report that could make me a better developer will be welcome!
+
+I build this project to test my knowledge about nodejs, express, mongodb, validation with joi schemas, authorization with token at the backend, database management, and to try a new arquiteture(controllers, routes, and middlewares).
+
+### Tecnologies used
+
+- NodeJs
+- Express
+- MongoDB
+- Joi
+- Bcrypt
 
 ## Getting Started
 
@@ -17,7 +31,7 @@ To run this project in the development mode, you'll need to have a basic environ
 ```
 $ git clone https://github.com/Oliv-ramon/MyWallet-Backend
 
-$ cd mindcast-server
+$ cd MyWallet-Backend
 ```
 
 **Installing dependencies**
