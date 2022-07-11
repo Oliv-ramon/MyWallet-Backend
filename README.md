@@ -1,4 +1,4 @@
-# MyWallet-Backend
+# MyWallet-Api
 
 This is the back-end of the [MyWallet](https://github.com/Oliv-ramon/MyWallet). 
 
