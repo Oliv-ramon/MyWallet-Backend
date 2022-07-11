@@ -29,9 +29,9 @@ To run this project in the development mode, you'll need to have a basic environ
 **Cloning the Repository**
 
 ```
-$ git clone https://github.com/Oliv-ramon/MyWallet-Backend
+$ git clone https://github.com/Oliv-ramon/mywallet-api
 
-$ cd MyWallet-Backend
+$ cd mywallet-api
 ```
 
 **Installing dependencies**
